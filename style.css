@@ -1,0 +1,98 @@
+﻿body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+	background-image: url('C:/Users/renat/Downloads/fundo_kb.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.container-top {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 20px;
+	margin-top:10px;
+
+}
+
+.container-top a {
+	margin-top: 10px;
+}
+
+.container-top img {
+	max-width: 60px; 
+	max-height: 60px;
+}
+.article-text {
+	color: #747B81;
+	text-align: center;
+	padding: 10px 0;
+}
+
+.proposal-text {
+	color: #747B81;
+	font-weight: bold;
+}
+.container-main {
+	background-color: #747B81;
+	margin: 15px;
+	padding: 10px;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.info-budget {
+	background-color: #FFFFFF;
+	margin: 10px;
+	padding: 10px;
+	height:100px;
+	width:95%;
+	border-radius: 10px;
+	display: flex;
+}
+.article-info {
+	margin: 10px;
+	padding: 10px;
+	border: 2px solid #FCFCFC;
+	border-radius: 10px;
+	min-width:60%;
+	text-align: center;
+	white-space: nowrap;
+	color: #FCFCFC;
+}
+.info-items {
+	background-color: #FFFFFF;
+	margin: 10px;
+	padding: 10px;
+	width: 95%;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	min-height: 100px; /* Altura mínima */
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 20px;
+}
+
+table, th, td {
+	border: 1px solid #ccc;
+}
+
+th {
+	background-color: #f2f2f2;
+	text-align: left;
+	padding: 8px;
+}
+
+td {
+	padding: 8px;
+}

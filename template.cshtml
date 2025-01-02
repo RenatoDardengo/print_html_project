@@ -1,0 +1,45 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container-top">
+        <img src="images/logo.png" alt="Sample Photo" />
+        <a class="article-text"><span class="proposal-text">PROPOSTA</span> COMERCIAL </a>
+    </div>
+    <div class="container-main">
+        <a class="article-info"> INFORMAÇÕES DO CLIENTE</a>
+        <div class="info-budget">
+
+        </div>
+        <a class="article-info"> ITENS DO ORÇAMENTO</a>
+        <div class="info-items">
+            <table>
+                <tr>
+                    <th>Data</th>
+                    <th>Descrição</th>
+                    <th>Valor</th>
+                </tr>
+                @foreach (var item in Model.Items)
+                {
+                    <tr>
+                        <td>@item.Date</td>
+                        <td>@item.Description</td>
+                        <td>@item.Price</td>
+                    </tr>
+                }
+            </table>
+
+        </div>
+        
+    </div>
+
+
+    
+
+</body>
+</html>
