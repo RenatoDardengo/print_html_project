@@ -74,7 +74,7 @@
 	border-radius: 10px;
 	display: flex;
 	flex-direction: column;
-	min-height: 100px; /* Altura mínima */
+	min-height: 100px; 
 }
 
 table {

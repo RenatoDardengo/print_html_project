@@ -38,6 +38,7 @@
             // 
             webView.AllowExternalDrop = true;
             webView.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            webView.BackColor = SystemColors.ButtonHighlight;
             webView.CreationProperties = null;
             webView.DefaultBackgroundColor = Color.White;
             webView.Location = new Point(68, 96);

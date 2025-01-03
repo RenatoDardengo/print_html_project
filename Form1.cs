@@ -25,7 +25,7 @@ namespace Print_html_project
                 .UseMemoryCachingProvider()
                 .Build();
 
-            // Dados do modelo
+            // Simulo dados do modelo
             var model = new DataModel
             {
                 Name = "João",
@@ -39,7 +39,7 @@ namespace Print_html_project
             };
 
             // Renderiza o HTML
-            string templateKey = "template.cshtml"; // Apenas o nome do arquivo
+            string templateKey = "template.cshtml"; 
             try
             {
                 string html = await engine.CompileRenderAsync(templateKey, model);
