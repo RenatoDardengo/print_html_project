@@ -49,10 +49,11 @@
 }
 .info-budget {
 	background-color: #FFFFFF;
+	color: #747B81;
 	margin: 10px;
 	padding: 10px;
-	height:100px;
-	width:95%;
+	height: 100px;
+	width: 95%;
 	border-radius: 10px;
 	display: flex;
 }
@@ -88,7 +89,8 @@ table, th, td {
 }
 
 th {
-	background-color: #f2f2f2;
+	background-color: #747B81;
+	color: #FCFCFC;
 	text-align: left;
 	padding: 8px;
 }

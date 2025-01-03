@@ -1,23 +1,25 @@
-﻿
-
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
-    <div class="container-top">
+    <header class="container-top">
         <img src="images/logo.png" alt="Sample Photo" />
         <a class="article-text"><span class="proposal-text">PROPOSTA</span> COMERCIAL </a>
-    </div>
-    <div class="container-main">
+    </header>
+    <main class="container-main">
         <a class="article-info"> INFORMAÇÕES DO CLIENTE</a>
-        <div class="info-budget">
+        <section class="info-budget">
+            <div>
+                <a> Nome:@Model.Name</a>
+            </div>
 
-        </div>
+
+        </section>
         <a class="article-info"> ITENS DO ORÇAMENTO</a>
-        <div class="info-items">
+        <section class="info-items">
             <table>
                 <tr>
                     <th>Data</th>
@@ -33,10 +35,13 @@
                     </tr>
                 }
             </table>
+           <div>
 
-        </div>
+           </div>
+
+        </section>
         
-    </div>    
+    </main>    
 
 </body>
 </html>
