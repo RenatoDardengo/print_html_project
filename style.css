@@ -98,3 +98,37 @@ th {
 td {
 	padding: 8px;
 }
+
+.summary-budget {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	padding: 20px;
+	align-items: center;
+	gap: 20px;
+}
+
+.summary-payment,
+.details {
+	
+	margin: 5px;
+}
+
+.summary-payment {
+	padding: 10px; 
+
+}
+
+.details {
+	padding: 10px; 
+	border-radius: 5px; 
+
+}
+.details-info {
+	border-radius: 10px;
+	text-align: center;
+	white-space: nowrap;
+	max-width:60%;
+	height:20px;
+	background-color: #747B81;
+	color: #FCFCFC;
+}
