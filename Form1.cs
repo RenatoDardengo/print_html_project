@@ -30,11 +30,16 @@ namespace Print_html_project
                .Build();
             var model = new DataModel
             {
+                IdBudget = 100,
+                Decorator= "Maria",
+                PhoneNumber="(27)99999-9999",
                 Name = "João",
                 Items = new List<Items>
                 {
-                    new Items { Date = "2025-01-01", Description = "Venda", Price = "R$ 100,00" },
-                    new Items { Date = "2025-01-02", Description = "Serviço", Price = "R$ 200,00" }
+                    new Items { Date = new DateTime (2025,01,01), Description = "Venda", Price = 100.00 },
+                    new Items { Date = new DateTime (2025,01,01), Description = "Venda", Price = 200.00 },
+                    new Items { Date = new DateTime (2025,01,01), Description = "Venda", Price = 300.00 },
+
                 }
             };
             try
@@ -70,7 +75,7 @@ namespace Print_html_project
                 string pdf3 = Path.Combine(pastaPdf, "pdf3.pdf");
                 string pdf4 = Path.Combine(pastaPdf, "pdf4.pdf");
                 string pdf5 = Path.Combine(pastaPdf, "pdf5.pdf");
-                List<string> pdfFiles = new List<string> { pdf1, pdf2, pdf3,pdf4, pdf5 };
+                List<string> pdfFiles = new List<string> { pdf1, pdf2, pdf3, pdf4, pdf5 };
                 SaveFileDialog saveFileDialog = new SaveFileDialog
                 {
                     Filter = "Arquivos PDF (*.pdf)|*.pdf",
@@ -142,7 +147,7 @@ namespace Print_html_project
             {
                 MessageBox.Show($"Erro ao gerar o PDF: {ex.Message}");
             }
-        }       
+        }
 
         private void btnCarregarHtml_Click(object sender, EventArgs e)
         {
@@ -174,6 +179,10 @@ namespace Print_html_project
             webView.CoreWebView2.ShowPrintUI();
         }
 
+        private  void Form1_Load(object sender, EventArgs e)
+        {
+             GerarHTML();
+        }
     }
 
 

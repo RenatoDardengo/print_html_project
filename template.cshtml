@@ -8,18 +8,23 @@
 <body>
     <header class="container-top">
         <img src="images/logo.png" alt="Sample Photo" />
-        <a class="article-text"><span class="proposal-text">PROPOSTA</span> COMERCIAL </a>
+        <span class="article-text"><span class="bold-text">PROPOSTA</span> COMERCIAL </span>
     </header>
     <main class="container-main">
-        <a class="article-info"> INFORMAÇÕES DO CLIENTE</a>
+        <span class="article-info"> INFORMAÇÕES DO CLIENTE</span>
         <section class="info-budget">
-            <div>
-                <a> Nome:@Model.Name</a>
+            <div class="client-info">
+                <span><span class="bold-text">Orçamento nº: </span> @Model.IdBudget</span>
+                <span><span class="bold-text">Nome: </span>  @Model.Name</span>
+            </div>
+            <div class="client-info">
+                <span> <span class="bold-text">Profissional: </span>  @Model.Decorator</span>
+                <span> <span class="bold-text">Telefone: </span>  @Model.PhoneNumber</span>
             </div>
 
 
         </section>
-        <a class="article-info"> ITENS DO ORÇAMENTO</a>
+        <span class="article-info"> ITENS DO ORÇAMENTO</span>
         <section class="info-items">
             <table>
                 <tr>
@@ -38,11 +43,11 @@
             </table>
            <div class="summary-budget">
                <div class="summary-payment">
-                   <p > teste</p>
+                   <span > teste</span>
                </div>
                <div class="details">
-                    <p class="details-info"> Valor total</p>
-                    <p class="details-info"> Condições de pagamento</p>
+                    <span class="details-info"> Valor total</span>
+                    <span class="details-info"> Condições de pagamento</span>
 
                </div>
 
@@ -51,6 +56,11 @@
         </section>
         
     </main>    
-
+    <footer>
+        <p>
+            Kama Brasileira Ind. de Confec. Ltda - CNPJ: 31.467.673/0005-03 - End.: Av. Rio Branco, 274, lojas 26 B, C e D - 2o piso Shopping Rio Branco -
+            Santa Lúcia - Vitória - ES - CEP: 29055-916 - Tel: (27) 3225.1456 /(27) 3324.3090 - vendas@kamabrasileira.com.br - kamabrasileira
+        </p>
+    </footer>
 </body>
 </html>
