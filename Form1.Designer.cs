@@ -29,8 +29,10 @@
         private void InitializeComponent()
         {
             webView = new Microsoft.Web.WebView2.WinForms.WebView2();
-            button1 = new Button();
-            button2 = new Button();
+            btnImprimir = new Button();
+            btnGerarPdf = new Button();
+            btnGerarHtml = new Button();
+            btnCarregarHtml = new Button();
             ((System.ComponentModel.ISupportInitialize)webView).BeginInit();
             SuspendLayout();
             // 
@@ -47,33 +49,55 @@
             webView.TabIndex = 0;
             webView.ZoomFactor = 1D;
             // 
-            // button1
+            // btnImprimir
             // 
-            button1.Location = new Point(68, 28);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 1;
-            button1.Text = "Carregar";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            btnImprimir.Location = new Point(336, 28);
+            btnImprimir.Name = "btnImprimir";
+            btnImprimir.Size = new Size(75, 23);
+            btnImprimir.TabIndex = 1;
+            btnImprimir.Text = "Imprimir";
+            btnImprimir.UseVisualStyleBackColor = true;
+            btnImprimir.Click += btnImprimir_Click;
             // 
-            // button2
+            // btnGerarPdf
             // 
-            button2.Location = new Point(180, 28);
-            button2.Name = "button2";
-            button2.Size = new Size(75, 23);
-            button2.TabIndex = 1;
-            button2.Text = "Imprimir";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
+            btnGerarPdf.Location = new Point(512, 28);
+            btnGerarPdf.Name = "btnGerarPdf";
+            btnGerarPdf.Size = new Size(75, 23);
+            btnGerarPdf.TabIndex = 2;
+            btnGerarPdf.Text = "Gerar pdf";
+            btnGerarPdf.UseVisualStyleBackColor = true;
+            btnGerarPdf.Click += btnGerarPdf_Click;
+            // 
+            // btnGerarHtml
+            // 
+            btnGerarHtml.Location = new Point(68, 28);
+            btnGerarHtml.Name = "btnGerarHtml";
+            btnGerarHtml.Size = new Size(119, 23);
+            btnGerarHtml.TabIndex = 3;
+            btnGerarHtml.Text = "Gerar HTML";
+            btnGerarHtml.UseVisualStyleBackColor = true;
+            btnGerarHtml.Click += btnGerarHtml_Click;
+            // 
+            // btnCarregarHtml
+            // 
+            btnCarregarHtml.Location = new Point(210, 28);
+            btnCarregarHtml.Name = "btnCarregarHtml";
+            btnCarregarHtml.Size = new Size(105, 23);
+            btnCarregarHtml.TabIndex = 4;
+            btnCarregarHtml.Text = "Carregar HTML";
+            btnCarregarHtml.UseVisualStyleBackColor = true;
+            btnCarregarHtml.Click += btnCarregarHtml_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(997, 549);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(btnCarregarHtml);
+            Controls.Add(btnGerarHtml);
+            Controls.Add(btnGerarPdf);
+            Controls.Add(btnImprimir);
             Controls.Add(webView);
             Name = "Form1";
             Text = "Form1";
@@ -85,6 +109,9 @@
 
         private Microsoft.Web.WebView2.WinForms.WebView2 webView;
         private Button button1;
-        private Button button2;
+        private Button btnImprimir;
+        private Button btnGerarPdf;
+        private Button btnGerarHtml;
+        private Button btnCarregarHtml;
     }
 }
