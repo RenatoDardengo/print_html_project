@@ -16,7 +16,7 @@ namespace Print_html_project
         }
 
 
-        public async void GerarHTML()
+        public async Task GerarHTML()
         {
             string templatePath = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "template.cshtml");
             if (!File.Exists(templatePath))
@@ -34,6 +34,7 @@ namespace Print_html_project
                 Decorator= "Maria",
                 PhoneNumber="(27)99999-9999",
                 Name = "João",
+                TotalBudget= 100,
                 Items = new List<Items>
                 {
                     new Items { Date = new DateTime (2025,01,01), Description = "Venda", Price = 100.00 },
@@ -179,9 +180,10 @@ namespace Print_html_project
             webView.CoreWebView2.ShowPrintUI();
         }
 
-        private  void Form1_Load(object sender, EventArgs e)
+        private async void Form1_Load(object sender, EventArgs e)
         {
-             GerarHTML();
+            await GerarHTML();
+            webView.Source = new Uri(outputHtmlPath);
         }
     }
 

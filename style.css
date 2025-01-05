@@ -42,6 +42,10 @@ body {
     color: #747B81;
     font-weight: bold;
 }
+.bold-text-white {
+    color: #FCFCFC;
+    font-weight: bold;
+}
 
 .container-main {
     background-color: #747B81;
@@ -108,7 +112,7 @@ table {
 }
 
 table, th, td {
-    border: 1px solid #ccc;
+    border: 1px solid #747B81;
 }
 
 th {
@@ -120,6 +124,7 @@ th {
 
 td {
     padding: 8px;
+    color: #747B81;
 }
 
 .summary-budget {
@@ -130,28 +135,57 @@ td {
     gap: 20px;
 }
 
-.summary-payment,
-.details {
-    margin: 5px;
-}
-
-.summary-payment {
-    padding: 10px;
-}
 
 .details {
-    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    color: #747B81;
+}
+
+.payment {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
     border-radius: 5px;
 }
 
-.details-info {
+.payment-info {
     border-radius: 10px;
     text-align: center;
     white-space: nowrap;
-    max-width: 60%;
-    height: 20px;
+    min-width: 60%;
+    height: 25px;
+    line-height: 25px;
     background-color: #747B81;
     color: #FCFCFC;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+.payment-detail {
+    text-align: center;
+    white-space: nowrap;
+    min-width: 60%;
+    line-height: 25px;
+    color: #747B81;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+.payment-cash {
+    border: solid 1px #747B81;
+    border-radius: 10px;
+    text-align: center;
+    white-space: nowrap;
+    min-width: 60%;
+    height: 25px;
+    line-height: 25px;
+    color: #747B81;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+.details-info {
+    font-size: 14px;
+    margin-bottom: 5px;
 }
 
 footer {

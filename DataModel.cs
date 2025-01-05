@@ -7,6 +7,7 @@ namespace Print_html_project
         public string Decorator { get; set; } = string.Empty;
         public string PhoneNumber { get; set; } = string.Empty;
         public int IdBudget {  get; set; }
+        public double TotalBudget { get; set; }
         public List<Items> Items { get; set; } = new List<Items>();
     }
 
